@@ -1,24 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pokemon X and Y.ttf">
+            <string>Pokemon-X-and-Y</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Cat Petter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CatPetterViewController" customModule="CatPetter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="omo-IO-pQH">
+                                <rect key="frame" x="0.0" y="-120" width="414" height="1136"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSquare" translatesAutoresizingMaskIntoConstraints="NO" id="kTv-i9-NFy">
+                                <rect key="frame" x="32" y="96" width="350" height="350"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X7m-yG-fhG">
+                                <rect key="frame" x="32" y="96" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="hp3-12-ZLu"/>
+                                    <constraint firstAttribute="width" secondItem="X7m-yG-fhG" secondAttribute="height" multiplier="1:1" id="pHG-ZJ-2bA"/>
+                                    <constraint firstAttribute="width" constant="350" id="qax-GK-4gf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frames-transparent-medieval-4" translatesAutoresizingMaskIntoConstraints="NO" id="xwg-9K-uCy">
+                                <rect key="frame" x="32" y="96" width="350" height="350"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textboxTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="F9A-cj-Cuy">
+                                <rect key="frame" x="12.5" y="478" width="389" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="ca9-i5-oPW"/>
+                                    <constraint firstAttribute="width" constant="389" id="eoL-Kk-wK7"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="(cat adventure!)" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fi-sL-cTb">
+                                <rect key="frame" x="32" y="507" width="350" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="S4c-ts-xM4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pokemon-X-and-Y" family="Pokemon X and Y" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOU-Y6-5uA">
+                                <rect key="frame" x="91" y="611" width="232" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="ElF-EC-7Vx"/>
+                                    <constraint firstAttribute="height" constant="154" id="Sih-uz-9my"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pokemon-X-and-Y" family="Pokemon X and Y" pointSize="24"/>
+                                <state key="normal" title="Pet!" backgroundImage="buttonStock1"/>
+                                <connections>
+                                    <action selector="petButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofd-uK-rrC"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSquare" translatesAutoresizingMaskIntoConstraints="NO" id="JyM-wp-p48">
+                                <rect key="frame" x="47" y="405" width="133" height="22"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSquare" translatesAutoresizingMaskIntoConstraints="NO" id="u0l-ZK-iuY">
+                                <rect key="frame" x="0.0" y="783" width="414" height="38"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Cat Affection)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW2-Y9-6Kf">
+                                <rect key="frame" x="47" y="405" width="133" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Kwy-rB-D2e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pokemon-X-and-Y" family="Pokemon X and Y" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="207" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-UV-gsd">
+                                <rect key="frame" x="12" y="783" width="390" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(HP)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uk3-FG-JoC">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="Pokemon-X-and-Y" family="Pokemon X and Y" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Player Level)" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eM-z8-2aK">
+                                        <rect key="frame" x="298.5" y="0.0" width="91.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="Pokemon-X-and-Y" family="Pokemon X and Y" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="390" id="Vhs-Ko-sav"/>
+                                    <constraint firstAttribute="height" constant="22" id="g9d-wP-TY3"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackSquare" translatesAutoresizingMaskIntoConstraints="NO" id="Va1-aa-0sH">
+                                <rect key="frame" x="-7" y="0.0" width="421" height="903"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="q5R-Wn-KON">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JyM-wp-p48" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="361" id="2wd-jp-m46"/>
+                            <constraint firstItem="kTv-i9-NFy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="3Jn-xY-pjY"/>
+                            <constraint firstItem="X7m-yG-fhG" firstAttribute="trailing" secondItem="3fi-sL-cTb" secondAttribute="trailing" id="3y6-MN-ohd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HW2-Y9-6Kf" secondAttribute="trailing" constant="234" id="8Ns-VQ-hcR"/>
+                            <constraint firstItem="3fi-sL-cTb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fw3-vd-E5J"/>
+                            <constraint firstItem="u0l-ZK-iuY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HHw-4z-LcL"/>
+                            <constraint firstItem="xwg-9K-uCy" firstAttribute="width" secondItem="X7m-yG-fhG" secondAttribute="width" id="IeJ-qM-JKY"/>
+                            <constraint firstItem="HW2-Y9-6Kf" firstAttribute="leading" secondItem="JyM-wp-p48" secondAttribute="leading" id="Jsr-7K-zB8"/>
+                            <constraint firstItem="X7m-yG-fhG" firstAttribute="leading" secondItem="3fi-sL-cTb" secondAttribute="leading" id="L33-zq-y0a"/>
+                            <constraint firstItem="HW2-Y9-6Kf" firstAttribute="top" secondItem="JyM-wp-p48" secondAttribute="top" id="LFt-nt-Kgh"/>
+                            <constraint firstItem="u0l-ZK-iuY" firstAttribute="top" secondItem="Ggg-UV-gsd" secondAttribute="top" id="MMf-8C-10H"/>
+                            <constraint firstItem="u0l-ZK-iuY" firstAttribute="top" secondItem="yOU-Y6-5uA" secondAttribute="bottom" constant="18" id="N25-Ok-jYx"/>
+                            <constraint firstItem="yOU-Y6-5uA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Og0-3B-8N7"/>
+                            <constraint firstItem="xwg-9K-uCy" firstAttribute="centerY" secondItem="X7m-yG-fhG" secondAttribute="centerY" id="V6h-w2-Yj3"/>
+                            <constraint firstItem="u0l-ZK-iuY" firstAttribute="trailing" secondItem="omo-IO-pQH" secondAttribute="trailing" id="ZUG-bb-JYt"/>
+                            <constraint firstItem="q5R-Wn-KON" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zxj-ml-F6t"/>
+                            <constraint firstItem="kTv-i9-NFy" firstAttribute="centerY" secondItem="xwg-9K-uCy" secondAttribute="centerY" id="dWd-hq-6da"/>
+                            <constraint firstItem="u0l-ZK-iuY" firstAttribute="leading" secondItem="omo-IO-pQH" secondAttribute="leading" id="fBd-RI-1LZ"/>
+                            <constraint firstItem="F9A-cj-Cuy" firstAttribute="top" secondItem="kTv-i9-NFy" secondAttribute="bottom" constant="32" id="glV-76-CdC"/>
+                            <constraint firstItem="HW2-Y9-6Kf" firstAttribute="bottom" secondItem="JyM-wp-p48" secondAttribute="bottom" id="hlG-dd-SET"/>
+                            <constraint firstItem="xwg-9K-uCy" firstAttribute="centerX" secondItem="X7m-yG-fhG" secondAttribute="centerX" id="i5f-xr-5OI"/>
+                            <constraint firstItem="JyM-wp-p48" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="iMd-Md-6Da"/>
+                            <constraint firstItem="xwg-9K-uCy" firstAttribute="height" secondItem="X7m-yG-fhG" secondAttribute="height" id="l6e-e9-pZ4"/>
+                            <constraint firstItem="q5R-Wn-KON" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lOz-E5-vTt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yOU-Y6-5uA" secondAttribute="bottom" constant="97" id="lzh-a1-4Hd"/>
+                            <constraint firstItem="omo-IO-pQH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mNc-jp-s0p"/>
+                            <constraint firstItem="F9A-cj-Cuy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfk-7P-9O0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u0l-ZK-iuY" secondAttribute="bottom" constant="41" id="nb8-eT-Akt"/>
+                            <constraint firstItem="3fi-sL-cTb" firstAttribute="top" secondItem="kTv-i9-NFy" secondAttribute="bottom" constant="61" id="oUo-bg-sUm"/>
+                            <constraint firstItem="F9A-cj-Cuy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pCR-Ep-Wye"/>
+                            <constraint firstItem="X7m-yG-fhG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qvA-em-Eka"/>
+                            <constraint firstItem="omo-IO-pQH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uB0-my-VAZ"/>
+                            <constraint firstItem="HW2-Y9-6Kf" firstAttribute="trailing" secondItem="JyM-wp-p48" secondAttribute="trailing" id="vUJ-yW-PR6"/>
+                            <constraint firstItem="kTv-i9-NFy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vlS-OL-qgD"/>
+                            <constraint firstItem="Ggg-UV-gsd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="x6L-ao-dMT"/>
+                            <constraint firstItem="kTv-i9-NFy" firstAttribute="centerX" secondItem="omo-IO-pQH" secondAttribute="centerX" id="yfu-wk-dM0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="q5R-Wn-KON" id="Ysd-ES-Kqv"/>
+                        <outlet property="catAffectionLabel" destination="HW2-Y9-6Kf" id="h0q-8Z-d0j"/>
+                        <outlet property="catImageLabel" destination="X7m-yG-fhG" id="jw8-FC-CJn"/>
+                        <outlet property="frameImage" destination="xwg-9K-uCy" id="v21-rp-QpB"/>
+                        <outlet property="messageLabel" destination="3fi-sL-cTb" id="YrL-dl-Ia3"/>
+                        <outlet property="petbutton" destination="yOU-Y6-5uA" id="Xx0-wu-cQI"/>
+                        <outlet property="playerLevelLabel" destination="0eM-z8-2aK" id="Rzd-6x-NRF"/>
+                        <outlet property="playerPrideLabel" destination="uk3-FG-JoC" id="Zvt-UB-Fi8"/>
+                        <outlet property="screenCover" destination="Va1-aa-0sH" id="O3K-4y-Jhn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blackSquare" width="350" height="350"/>
+        <image name="buttonStock1" width="300" height="200"/>
+        <image name="forest" width="640" height="1136"/>
+        <image name="frames-transparent-medieval-4" width="800" height="618"/>
+        <image name="textboxTransparent" width="2391" height="635"/>
+    </resources>
 </document>

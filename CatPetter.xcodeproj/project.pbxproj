@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		17F4068A228C706D006BB1DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F40689228C706D006BB1DD /* AppDelegate.swift */; };
-		17F4068C228C706D006BB1DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F4068B228C706D006BB1DD /* ViewController.swift */; };
 		17F4068F228C706D006BB1DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F4068D228C706D006BB1DD /* Main.storyboard */; };
 		17F40692228C706D006BB1DD /* CatPetter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17F40690228C706D006BB1DD /* CatPetter.xcdatamodeld */; };
 		17F40694228C706F006BB1DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F40693228C706F006BB1DD /* Assets.xcassets */; };
 		17F40697228C706F006BB1DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F40695228C706F006BB1DD /* LaunchScreen.storyboard */; };
+		17F4069F228C716D006BB1DD /* CatPetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F4069E228C716D006BB1DD /* CatPetterViewController.swift */; };
+		17F406A1228C71A0006BB1DD /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F406A0228C71A0006BB1DD /* Cat.swift */; };
+		17F406A4228C740C006BB1DD /* CatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F406A3228C740C006BB1DD /* CatController.swift */; };
+		17F406A8228C8224006BB1DD /* EncounterText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F406A7228C8224006BB1DD /* EncounterText.swift */; };
+		17F406AA228C8615006BB1DD /* CatEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F406A9228C8615006BB1DD /* CatEncounter.swift */; };
+		17F406AC228C8749006BB1DD /* Pokemon X and Y.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F406AB228C8749006BB1DD /* Pokemon X and Y.ttf */; };
+		17F406AE228C9CC7006BB1DD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F406AD228C9CC7006BB1DD /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17F40686228C706D006BB1DD /* CatPetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatPetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F40689228C706D006BB1DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17F4068B228C706D006BB1DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17F4068E228C706D006BB1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17F40691228C706D006BB1DD /* CatPetter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CatPetter.xcdatamodel; sourceTree = "<group>"; };
 		17F40693228C706F006BB1DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F40696228C706F006BB1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17F40698228C706F006BB1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F4069E228C716D006BB1DD /* CatPetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPetterViewController.swift; sourceTree = "<group>"; };
+		17F406A0228C71A0006BB1DD /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		17F406A3228C740C006BB1DD /* CatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatController.swift; sourceTree = "<group>"; };
+		17F406A7228C8224006BB1DD /* EncounterText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterText.swift; sourceTree = "<group>"; };
+		17F406A9228C8615006BB1DD /* CatEncounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatEncounter.swift; sourceTree = "<group>"; };
+		17F406AB228C8749006BB1DD /* Pokemon X and Y.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pokemon X and Y.ttf"; path = "../../../Downloads/Pokemon X and Y.ttf"; sourceTree = "<group>"; };
+		17F406AD228C9CC7006BB1DD /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +69,44 @@
 			isa = PBXGroup;
 			children = (
 				17F40689228C706D006BB1DD /* AppDelegate.swift */,
-				17F4068B228C706D006BB1DD /* ViewController.swift */,
 				17F4068D228C706D006BB1DD /* Main.storyboard */,
+				17F406AB228C8749006BB1DD /* Pokemon X and Y.ttf */,
+				17F406A6228C7FF1006BB1DD /* ViewController */,
+				17F406A5228C7417006BB1DD /* Model Controller */,
+				17F406A2228C7400006BB1DD /* Model */,
 				17F40693228C706F006BB1DD /* Assets.xcassets */,
 				17F40695228C706F006BB1DD /* LaunchScreen.storyboard */,
 				17F40698228C706F006BB1DD /* Info.plist */,
 				17F40690228C706D006BB1DD /* CatPetter.xcdatamodeld */,
 			);
 			path = CatPetter;
+			sourceTree = "<group>";
+		};
+		17F406A2228C7400006BB1DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17F406A0228C71A0006BB1DD /* Cat.swift */,
+				17F406A7228C8224006BB1DD /* EncounterText.swift */,
+				17F406A9228C8615006BB1DD /* CatEncounter.swift */,
+				17F406AD228C9CC7006BB1DD /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17F406A5228C7417006BB1DD /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17F406A3228C740C006BB1DD /* CatController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		17F406A6228C7FF1006BB1DD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17F4069E228C716D006BB1DD /* CatPetterViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F406AC228C8749006BB1DD /* Pokemon X and Y.ttf in Resources */,
 				17F40697228C706F006BB1DD /* LaunchScreen.storyboard in Resources */,
 				17F40694228C706F006BB1DD /* Assets.xcassets in Resources */,
 				17F4068F228C706D006BB1DD /* Main.storyboard in Resources */,
@@ -138,9 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F4068C228C706D006BB1DD /* ViewController.swift in Sources */,
+				17F406AA228C8615006BB1DD /* CatEncounter.swift in Sources */,
 				17F40692228C706D006BB1DD /* CatPetter.xcdatamodeld in Sources */,
+				17F406A8228C8224006BB1DD /* EncounterText.swift in Sources */,
+				17F406A1228C71A0006BB1DD /* Cat.swift in Sources */,
+				17F406AE228C9CC7006BB1DD /* Player.swift in Sources */,
 				17F4068A228C706D006BB1DD /* AppDelegate.swift in Sources */,
+				17F406A4228C740C006BB1DD /* CatController.swift in Sources */,
+				17F4069F228C716D006BB1DD /* CatPetterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
